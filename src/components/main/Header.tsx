@@ -3,6 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Navbar from './Navbar'
+import MobileNav from './MobileNav'
 
 function Header() {
   return (
@@ -21,7 +22,12 @@ function Header() {
                 />
  
             </Link>
-        
+
+            {/* Mobile nav */}
+            <div className='xl:hidden ml-auto'>
+                <MobileNav />
+            </div>
+            
 
             {/* Navbar */}
             <div className="hidden xl:flex justify-center items-center">
