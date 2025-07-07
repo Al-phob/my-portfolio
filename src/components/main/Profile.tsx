@@ -1,7 +1,6 @@
 "use client"
 // components/ProfileCard.tsx
 
-import Image from "next/image";
 import ProfileCard from "./ProfileCard";
 
 
@@ -13,10 +12,10 @@ export default function Profile() {
         handle=""
         status="Online"
         contactText="Contact Me"
-        avatarUrl="/images/_DSC9311.jpg"
+        avatarUrl="/images/me.jpg"
         showUserInfo={true}
         enableTilt={true}
-        onContactClick={() => console.log('Contact clicked')}
+        //onContactClick={() => console.log('Contact clicked')}
     />
   );
 }
