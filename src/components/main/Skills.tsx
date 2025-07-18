@@ -9,9 +9,9 @@ const Skills = () => {
     const [category, setCategory] = useState("languages")
 
     return (
-        <SectionWrapper id="skills" className="min-h-screen mt-6">
+        <SectionWrapper id="skills" className="mt-6">
 
-            <div className="flex gap-8 justify-center py-4">
+            <div className="flex md:gap-8 justify-center py-4">
                 {["languages", "frameworks", "tools"].map((x) => (
                     <Button
                         key={x}
@@ -25,7 +25,7 @@ const Skills = () => {
                 ))}
             </div>
 
-            <div className="grid grid-cols-3 gap-5 justify-items-center">
+            <div className="grid grid-cols-3 gap-8 justify-items-center">
                 {category === "languages" && (
                     <>
                         <SkillCard name="Python" imageSrc="/images/python.png"/>

@@ -19,10 +19,6 @@ const links = [
     {
         name: "Projects",
         path: "/projects"
-    },
-    {
-        name: "Contact",
-        path: "/contact"
     }
 ]
 

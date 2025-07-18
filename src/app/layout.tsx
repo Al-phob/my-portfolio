@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat } from "next/font/google";
+
 import "./globals.css";
 import Navbar from "@/components/main/Navbar";
 import Particles from "@/components/main/Particles";
 import Header from "@/components/main/Header";
 //import StarsCanvas from "./components/main/Particles";
 import ParticlesBackground from "@/components/main/ParticlesBackground";
+import Footer from "@/components/main/Footer";
 //import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -42,6 +44,7 @@ export default function RootLayout({
         <ParticlesBackground />
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
