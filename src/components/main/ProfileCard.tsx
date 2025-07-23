@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useCallback, useMemo } from "react";
+import Image from "next/image";
 import "./ProfileCard.css"
 
 interface ProfileCardProps {
@@ -269,8 +270,10 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
           <div className="pc-shine" />
           <div className="pc-glare" />
           <div className="pc-content pc-avatar-content">
-            <img
+            <Image
               className="avatar"
+              width={80}
+              height={80}
               src={avatarUrl}
               alt={`${name || "User"} avatar`}
               loading="lazy"
@@ -283,9 +286,11 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
               <div className="pc-user-info">
                 <div className="pc-user-details">
                   <div className="pc-mini-avatar">
-                    <img
+                    <Image
                       src={miniAvatarUrl || avatarUrl}
                       alt={`${name || "User"} mini avatar`}
+                      width={10}
+                      height={10}
                       loading="lazy"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
