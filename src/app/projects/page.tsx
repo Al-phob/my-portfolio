@@ -7,16 +7,6 @@ import Link from 'next/link'
 const projects = [
     {
         id: 1,
-        name: "AyoBeen Website",
-        image: "/images/ayobeen.png",
-        link: "https://ayobeen.vercel.app/",
-        git: "https://github.com/Al-phob/ayobeen-project",
-        tech : "Tech Stack : Next.js, TypeScript, TailwindCSS",
-        desc: "I designed and developed the official website for AyoBeen, an emerging fashion brand. The main objective was to enhance their visual identity and showcase their collections in a clean and impactful way. The site emphasizes product presentation through a minimalist, responsive design, centered on the user experience. This project allowed me to combine visual creativity and technical mastery to support the growth of a young, ambitious brand."
-    },
-
-    {
-        id: 2,
         name: "Kev's Portfolio",
         image: "/images/kev-portfolio.png",
         link : "https://kev-portfolio-ten.vercel.app/",
@@ -26,11 +16,21 @@ const projects = [
     },
 
     {
+        id: 2,
+        name: "AyoBeen Website",
+        image: "/images/ayobeen.png",
+        link: "https://ayobeen.vercel.app/",
+        git: "https://github.com/Al-phob/ayobeen-project",
+        tech : "Tech Stack : Next.js, TypeScript, TailwindCSS",
+        desc: "I designed and developed the official website for AyoBeen, an emerging fashion brand. The main objective was to enhance their visual identity and showcase their collections in a clean and impactful way. The site emphasizes product presentation through a minimalist, responsive design, centered on the user experience. This project allowed me to combine visual creativity and technical mastery to support the growth of a young, ambitious brand."
+    },  
+
+    {
         id: 3,
         name: "My Portfolio",
         image: "/images/myportfolio.png",
         link: "",
-        git: "",
+        git: "https://github.com/Al-phob/my-portfolio",
         tech: "Tech Stack : Next.js, TypeScript, TailwindCSS",
         desc: "This portfolio was designed as an interactive showcase of my background and skills as a full-stack web developer. I showcase my professional and personal projects, with an emphasis on accessibility, performance, and sleek design. Designed primarily as a space for technical and creative expression, this site reflects my passion for web development, with a particular focus on user experience, responsive design, and seamless content integration. This project allowed me to apply my knowledge of Next.js, TypeScript, and Tailwind CSS, while asserting my identity as a developer." 
     }
