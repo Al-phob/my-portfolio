@@ -4,9 +4,9 @@ import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
 
 import Header from "@/components/main/Header";
-import ParticlesBackground from "@/components/main/ParticlesBackground";
+//import ParticlesBackground from "@/components/main/ParticlesBackground";
+import ParticlesWrapper from "@/components/main/ParticlesWrapper";
 import Footer from "@/components/main/Footer";
-
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   description: "This is my portfolio",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -39,7 +40,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
-        <ParticlesBackground />
+        <ParticlesWrapper />
         <Header />
         {children}
         <Footer />
