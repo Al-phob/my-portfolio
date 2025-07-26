@@ -38,7 +38,7 @@ function One() {
               
               <div className="flex flex-row gap-5">
                 <Link
-                  href="https://drive.google.com/file/d/1kWKEEAYlsuX4L-zjyBc0-ablKU87VONp/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1OUg8ARV8S8nuT1EsDcWjOwHifiA0Bh1u/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
